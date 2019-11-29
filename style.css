@@ -1,0 +1,64 @@
+body{
+    background: #e5eceb ;
+}
+h1,h2{
+    text-align: center;
+}
+
+.eingabe{
+    margin-left:33%;
+}
+
+.eingabe>input{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+
+}
+
+
+
+button{
+    background: #87d1c5;
+    border:1px solid #87d1c5 ;
+}
+#players{
+    float: right;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+#players>li{
+    margin-bottom: 10px;
+    width: 150px;
+    height: 20px;
+    overflow: hidden;
+    display:block;
+    border-left: 9px solid cornflowerblue;
+}
+.teams{
+    float: left;
+    margin-left: 30%;
+    margin-top: 0;
+}
+.teams>ul{
+  background: #c8e9e3;
+  width: 350px;
+  height: 100px;
+  border-radius:10px ;
+  padding-top:20px ;
+}
+.teams>ul>li{
+    width: 100px;
+    height: 50px;
+    border-radius:50px 13px 80px 12px;
+    background: #87d1c5 ;
+    text-align: center;
+    display: inline-block;
+    margin: 1% 1%;
+    padding-top:30px;
+}
+
+

@@ -3,21 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>awesomeTeams</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <h1>awesomeTeams</h1>
+    <h2>Teamgenerator fuer unseren X-Mas-Party-Quiz</h2>
     <div class="eingabe">
       <input type="text" name="user" value="">
       <button type="button" name="add">+</button>
-    </div>
-    <div class="actions">
-      <input type="number" name="playerCount" value="3">
+      <input style="width: 50px; margin-left: 20px; text-align: center;" type="number" name="playerCount" value="3">
       <button type="button" name="randomize">Mix</button>
     </div>
+    <div class="actions">
+     
+    </div>
     <div class="spielerliste">
-      <ul id="players"></ul>
+      <ul id="players">       
+      </ul>
+      <div class="teams">
+        </div>
     </div>
-    <div class="teams">
-    </div>
+   
   </body>
   <script type="text/javascript">
 
@@ -75,6 +81,9 @@
         let li = document.createElement('li');
         let del = document.createElement('button');
         li.innerText = item
+        
+        del.style.float = 'right';
+        
         del.innerText = 'x'
         del.onclick = (e)=> {
           playerList = playerList.filter( i => { return i !== item })
@@ -124,6 +133,9 @@
         if ( teamSpieler++ === 0 ){
           ul = document.createElement('ul')
           let h2 = document.createElement('h2')
+          h2.style.width = '400px'
+          h2.style.textAlign = 'center'
+          
           h2.innerText = `Team ${teamNummer++}`
           teams.append(h2);
           teams.append(ul);
